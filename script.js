@@ -11,7 +11,7 @@ let page=1;
 async function Searchimages(){
     inputData = inputE1.value;
     const url = `https://api.unsplash.com/search/photos?page=${page}&query=${inputData}&client_id=${accesskey}`
-
+    console.log("Helllo");
     const Response = await fetch(url)
     const data = await Response.json()
 
